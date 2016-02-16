@@ -12,23 +12,30 @@ h1 {
 .whole-modal {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
-}
-
-.modal-displayed {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: solid 2px #AAA;
   width: 40%;
   margin: 10% 30%;
   padding: 35px;
+  display: none;
+}
+
+/*Added class to display the modal*/
+.modal-displayed {
   background: white;
   display: block;
 }
 
+/*Small X button that closes modal*/
 .modal-close {
   float: right;
   border-radius: 100%;
 }
 
+/*Button to click to show modal*/
 .show-modal {
   width: 10%;
   margin-top: 15%;
